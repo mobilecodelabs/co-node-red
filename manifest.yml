@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: co-node-red
+  host: co-node-red
+  disk_quota: 1024M
+  services:
+  - co-node-red-cloudantNoSQLDB
+  - co-node-red-iotf-service
+  - availability-monitoring-auto
